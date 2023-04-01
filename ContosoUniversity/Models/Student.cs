@@ -2,11 +2,11 @@
 {
     public class Student
     {
-        public int ID { get; set; }
-        public string LastName { get; set; }
-        public string FirstMidName { get; set; }
-        public DateTime EnrollmentDate { get; set; }
+        public int ID_130 { get; set; }
+        public string LastName_130 { get; set; }
+        public string FirstMidName_130 { get; set; }
+        public DateTime EnrollmentDate_130 { get; set; }
 
-        public ICollection<Enrollment> Enrollments { get; set; }
+        public ICollection<Enrollment> Enrollments_130 { get; set; }
     }
 }

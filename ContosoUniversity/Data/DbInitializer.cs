@@ -14,14 +14,14 @@ namespace ContosoUniversity.Data
 
             var students = new Student[]
             {
-                new Student{FirstMidName="Carson",LastName="Alexander",EnrollmentDate=DateTime.Parse("2019-09-01")},
-                new Student{FirstMidName="Meredith",LastName="Alonso",EnrollmentDate=DateTime.Parse("2017-09-01")},
-                new Student{FirstMidName="Arturo",LastName="Anand",EnrollmentDate=DateTime.Parse("2018-09-01")},
-                new Student{FirstMidName="Gytis",LastName="Barzdukas",EnrollmentDate=DateTime.Parse("2017-09-01")},
-                new Student{FirstMidName="Yan",LastName="Li",EnrollmentDate=DateTime.Parse("2017-09-01")},
-                new Student{FirstMidName="Peggy",LastName="Justice",EnrollmentDate=DateTime.Parse("2016-09-01")},
-                new Student{FirstMidName="Laura",LastName="Norman",EnrollmentDate=DateTime.Parse("2018-09-01")},
-                new Student{FirstMidName="Nino",LastName="Olivetto",EnrollmentDate=DateTime.Parse("2019-09-01")}
+                new Student{FirstMidName_130="Carson",LastName_130="Alexander",EnrollmentDate_130=DateTime.Parse("2019-09-01")},
+                new Student{FirstMidName_130="Meredith",LastName_130="Alonso",EnrollmentDate_130=DateTime.Parse("2017-09-01")},
+                new Student{FirstMidName_130="Arturo",LastName_130="Anand",EnrollmentDate_130=DateTime.Parse("2018-09-01")},
+                new Student{FirstMidName_130="Gytis",LastName_130="Barzdukas",EnrollmentDate_130=DateTime.Parse("2017-09-01")},
+                new Student{FirstMidName_130="Yan",LastName_130="Li",EnrollmentDate_130=DateTime.Parse("2017-09-01")},
+                new Student{FirstMidName_130="Peggy",LastName_130="Justice",EnrollmentDate_130=DateTime.Parse("2016-09-01")},
+                new Student{FirstMidName_130="Laura",LastName_130="Norman",EnrollmentDate_130=DateTime.Parse("2018-09-01")},
+                new Student{FirstMidName_130="Nino",LastName_130="Olivetto",EnrollmentDate_130=DateTime.Parse("2019-09-01")}
             };
 
             context.Students.AddRange(students);
@@ -29,13 +29,13 @@ namespace ContosoUniversity.Data
 
             var courses = new Course[]
             {
-                new Course{CourseID=1050,Title="Chemistry",Credits=3},
-                new Course{CourseID=4022,Title="Microeconomics",Credits=3},
-                new Course{CourseID=4041,Title="Macroeconomics",Credits=3},
-                new Course{CourseID=1045,Title="Calculus",Credits=4},
-                new Course{CourseID=3141,Title="Trigonometry",Credits=4},
-                new Course{CourseID=2021,Title="Composition",Credits=3},
-                new Course{CourseID=2042,Title="Literature",Credits=4}
+                new Course{CourseID_130=1050,Title_130="Chemistry",Credits_130=3},
+                new Course{CourseID_130=4022,Title_130="Microeconomics",Credits_130=3},
+                new Course{CourseID_130=4041,Title_130="Macroeconomics",Credits_130=3},
+                new Course{CourseID_130=1045,Title_130="Calculus",Credits_130=4},
+                new Course{CourseID_130=3141,Title_130="Trigonometry",Credits_130=4},
+                new Course{CourseID_130=2021,Title_130="Composition",Credits_130=3},
+                new Course{CourseID_130=2042,Title_130="Literature",Credits_130=4}
             };
 
             context.Courses.AddRange(courses);
@@ -43,18 +43,18 @@ namespace ContosoUniversity.Data
 
             var enrollments = new Enrollment[]
             {
-                new Enrollment{StudentID=1,CourseID=1050,Grade=Grade.A},
-                new Enrollment{StudentID=1,CourseID=4022,Grade=Grade.C},
-                new Enrollment{StudentID=1,CourseID=4041,Grade=Grade.B},
-                new Enrollment{StudentID=2,CourseID=1045,Grade=Grade.B},
-                new Enrollment{StudentID=2,CourseID=3141,Grade=Grade.F},
-                new Enrollment{StudentID=2,CourseID=2021,Grade=Grade.F},
-                new Enrollment{StudentID=3,CourseID=1050},
-                new Enrollment{StudentID=4,CourseID=1050},
-                new Enrollment{StudentID=4,CourseID=4022,Grade=Grade.F},
-                new Enrollment{StudentID=5,CourseID=4041,Grade=Grade.C},
-                new Enrollment{StudentID=6,CourseID=1045},
-                new Enrollment{StudentID=7,CourseID=3141,Grade=Grade.A},
+                new Enrollment{StudentID_130=1,CourseID_130=1050,Grade_130=Grade.A},
+                new Enrollment{StudentID_130=1,CourseID_130=4022,Grade_130=Grade.C},
+                new Enrollment{StudentID_130=1,CourseID_130=4041,Grade_130=Grade.B},
+                new Enrollment{StudentID_130=2,CourseID_130=1045,Grade_130=Grade.B},
+                new Enrollment{StudentID_130=2,CourseID_130=3141,Grade_130=Grade.F},
+                new Enrollment{StudentID_130=2,CourseID_130=2021,Grade_130=Grade.F},
+                new Enrollment{StudentID_130=3,CourseID_130=1050},
+                new Enrollment{StudentID_130=4,CourseID_130=1050},
+                new Enrollment{StudentID_130=4,CourseID_130=4022,Grade_130=Grade.F},
+                new Enrollment{StudentID_130=5,CourseID_130=4041,Grade_130=Grade.C},
+                new Enrollment{StudentID_130=6,CourseID_130=1045},
+                new Enrollment{StudentID_130=7,CourseID_130=3141,Grade_130=Grade.A},
             };
 
             context.Enrollments.AddRange(enrollments);

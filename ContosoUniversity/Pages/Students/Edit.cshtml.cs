@@ -30,7 +30,7 @@ namespace ContosoUniversity.Pages.Students
                 return NotFound();
             }
 
-            var student =  await _context.Students.FirstOrDefaultAsync(m => m.ID == id);
+            var student =  await _context.Students.FirstOrDefaultAsync(m => m.ID_130 == id);
             if (student == null)
             {
                 return NotFound();
@@ -56,7 +56,7 @@ namespace ContosoUniversity.Pages.Students
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!StudentExists(Student.ID))
+                if (!StudentExists(Student.ID_130))
                 {
                     return NotFound();
                 }
@@ -71,7 +71,7 @@ namespace ContosoUniversity.Pages.Students
 
         private bool StudentExists(int id)
         {
-          return _context.Students.Any(e => e.ID == id);
+          return _context.Students.Any(e => e.ID_130 == id);
         }
     }
 }
